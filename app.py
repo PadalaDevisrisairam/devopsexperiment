@@ -8,5 +8,6 @@ def registration_form():
     return render_template("registration.html")  # Serve the form
 # Run Flask App
 if __name__ == "__main__":
+    #this is addtional comment added
     app.run(host="0.0.0.0", port=9000, debug=True)
   
