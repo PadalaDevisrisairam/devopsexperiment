@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        .regpage {
+            background-color: rgb(172, 172, 172);
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+        }
+        .label {
+            display: block;
+            margin-top: 10px;
+        }
+        .submitbutton {
+            background-color: green;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Page</h1>
+    <div class="regpage">
+        <label for="name" class="label">Enter Name</label>
+        <input id="name" placeholder="Enter name" required />
+        
+        <label for="password" class="label">Enter Password</label>
+        <input id="password" type="password" placeholder="Enter password" required />
+        
+        <label for="confirmpassword" class="label">Confirm Password</label>
+        <input id="confirmpassword" type="password" placeholder="Confirm password" required />
+        
+        <button class="submitbutton" onclick="registration()">Submit</button>
+    </div>
+
+    <script>
+        let name = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+            let confirmpassword = document.getElementById("confirmpassword").value;
+        function registration() {
+            
+
+            if (password !== confirmpassword) {
+                alert("Password and Confirm Password must be the same");
+            } else {
+                alert("The registration is successful");
+            }
+        }
+    </script>
+</body>
+</html>
