@@ -11,7 +11,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the application port (Flask runs on 5000 by default)
-EXPOSE 5000
+EXPOSE 9000
 
 # Command to run the application
 CMD ["python","app.py"]

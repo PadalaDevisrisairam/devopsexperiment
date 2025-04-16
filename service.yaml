@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: my-app
 spec:
-  type: NodePort # Use NodePort if LoadBalancer isn't working
+  type: LoadBalancer # Use NodeNodePort if LoadBalancer isn't working
   selector:
     app: my-app
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 5000  # Match with containerPort
+      targetPort: 9000  # Match with containerPort

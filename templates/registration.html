@@ -25,32 +25,19 @@
 </head>
 <body>
     <h1>Registration Page</h1>
-    <div class="regpage">
+    <form action="/submit" method="Post" class="regpage">
         <label for="name" class="label">Enter Name</label>
-        <input id="name" type="text" placeholder="Enter name" required />
+        <input class="name" name="name" id="name" type="text" placeholder="Enter name" required />
         
         <label for="password" class="label">Enter Password</label>
-        <input id="password" type="password" placeholder="Enter password" required />
+        <input class="password" name="password" id="password" type="password" placeholder="Enter password" required />
         
         <label for="confirmpassword" class="label">Confirm Password</label>
-        <input id="confirmpassword" type="password" placeholder="Confirm password" required />
+        <input class="confirmpassword" name="confirmpassword" id="confirmpassword" type="password" placeholder="Confirm password" required />
         
-        <button class="submitbutton" onclick="registration()">Submit</button>
-    </div>
+        <button type="submit" class="submitbutton" onclick="registration()">Submit</button>
+    </form>
 
-    <script>
-        let name = document.getElementById("name").value;
-            let password = document.getElementById("password").value;
-            let confirmpassword = document.getElementById("confirmpassword").value;
-        function registration() {
-            
-
-            if (password !== confirmpassword) {
-                alert("Password and Confirm Password must be the same");
-            } else {
-                alert("The registration is successful");
-            }
-        }
-    </script>
+    
 </body>
 </html>
