@@ -19,7 +19,6 @@ def driver():
     """Setup Selenium WebDriver"""
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service)
-    driver.maximize_window()
     yield driver
     driver.quit()
 
@@ -44,4 +43,4 @@ def test_registration_form(driver, data):
     assert "Success" in driver.page_source # Modify based on response
 
 if __name__ == "__main__":
-    pytest.main(["-v", "test.py"])
+    pytest.main(["test.py"])
