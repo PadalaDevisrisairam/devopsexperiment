@@ -38,6 +38,22 @@
         <button type="submit" class="submitbutton" onclick="registration()">Submit</button>
     </form>
 
-    
+    <script>
+
+        function registration(){
+            let pass=document.getElementById("password").value;
+            let conpass=document.getElementById("confirmpassword").value;
+            if(pass===conpass)
+       {
+            alert("login success");
+       }
+       else 
+       {
+            alert("password and confirm password must be same");
+       }
+
+        }
+      
+    </script>
 </body>
 </html>
