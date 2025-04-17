@@ -1,0 +1,82 @@
+exp-1
+write a simple registration form with css 
+to render your page with python you have to set the set up
+exp-2
+git,branches,github related branches in the order
+
+exp3
+GitHub creation
+git folder creation
+templates-index.html
+app.js
+
+git status - trach changes
+git add .
+git commit -m "version1"
+git remote add origin "repourl"
+git branch -m master main
+git push origin main
+
+
+exp4
+my Jenkins username:admin password:password
+go to Jenkins.io
+download msi file for windows
+installation
+run msi file
+click next for 
+location,run service as local system,test port(test port remove in task manager if it is busy with command netstat -ano | findstr :8080),jdk location,jenkins components
+click install 
+click finish
+open the http://localhost:8080 or run java -jar Jenkins.war
+initial admin password it is find in Jenkins.err file in Jenkins folder
+
+
+
+exp-5
+install GIT plugins
+in your python app add requirements.txt with command pip freeze > requirements.txt
+select freestyle,goto source code management,select git and give githuburl
+write code in build environment
+cd "$WORKSPACE"
+python3 venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py &
+save 
+build
+
+exp-8 
+you have to install virtual box 
+through kubectl you communicate with Kubernetes cluster with command in browser
+after installation with pwd(command) move kubectl.exe to c:\kubelctl and add this path to system path variables
+after that scroll down to last and click on install minikube 
+paste the command in powershell to install minikube , after to set path another command is there execute that command also
+after that we have start the minikube command in powershell is (minikube start)
+you can see that minikube is running in virtual box wait until it's completed
+minikube delete
+minikube start --driver=docker
+
+bcdedit /set hypervisorlaunchtype off
+minikube start --driver=virtualbox
+
+kubectl get nodes
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+to see service
+kubectl get svc
+to see pods
+kubec get pods
+kubectl delete service <service-name>
+minikube ip
+minikube service my-app
+
+exp-10:
+selenium
+pip install selenium
+pip install webdriver_manager
+pip install pytest
+
+
+
+
