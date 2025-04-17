@@ -16,6 +16,7 @@ git commit -m "version1"
 git remote add origin "repourl"
 git branch -m master main
 git push origin main
+git remote set-url origin https://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@github.com/PadalaDevisrisairam/node-currencyconverter.git
 
 
 exp4
